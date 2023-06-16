@@ -46,45 +46,17 @@ usuarios puedan navegar por ella sin dificultad.
 MODELO RELACIONAL DE BOOKFASH 
  
 1.	Determinar las entidades de BOOKFASH. 
-Libros 
-Autores 
-Vistas 
-Recomendaciones 
- 
+
+ ![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/da375280-86e1-4471-a376-365377992069)
+
+
 2.	Identificar las relaciones de BOOKFASH. 
-Libros 	Autores  
-Autores 	Libros  
-Vistas 	Recomendaciones 
-Recomendaciones 	Vistas 
- 
+
+  ![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/a13f5338-2c83-4fdc-a293-ffbe21eaf81b)
+
 3.	Identificar los atributos de cada una de las tablas. 
-
-Libros 
-ID_Libro 
-NombreLibro 
-NombreAutor 
-DescripciónLibro 
-	
-Autores 
-ID_Autor 
-NombreAutor 
-NombreLibro 
-DescripciónAutor 
-
  
-
-Vistas 
-Id_Libro 
-NombreLibro 
-NombreAutor 
-ID_Vistas 
-	
-Recomendaciones 
-NombreLibro 
-NombreAutor 
-ID_Recomencaciones 
-
- 
+ ![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/a182ff3a-9a16-4bcd-9ca6-7716546504df)
 
 
 

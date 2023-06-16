@@ -116,4 +116,5 @@ ID_Recomencaciones
 
 4. Modelo entidad relación de BOOKFASH
 
+![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/b26be783-e5fc-4f52-ab51-9bd18309849d)
 

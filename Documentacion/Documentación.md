@@ -43,74 +43,49 @@ de la información personal y financiera de los usuarios.
 Interfaz intuitiva: La aplicación debe contar con una interfaz intuitiva y fácil de usar para que los
 usuarios puedan navegar por ella sin dificultad.
 
-MODELO RELACIONAL DE BOOKFASH
-1. Determinar las entidades de BOOKFASH.
+MODELO RELACIONAL DE BOOKFASH 
+ 
+1.	Determinar las entidades de BOOKFASH. 
+Libros 
+Autores 
+Vistas 
+Recomendaciones 
+ 
+2.	Identificar las relaciones de BOOKFASH. 
+Libros 	Autores  
+Autores 	Libros  
+Vistas 	Recomendaciones 
+Recomendaciones 	Vistas 
+ 
+3.	Identificar los atributos de cada una de las tablas. 
 
+Libros 
+ID_Libro 
+NombreLibro 
+NombreAutor 
+DescripciónLibro 
+	
+Autores 
+ID_Autor 
+NombreAutor 
+NombreLibro 
+DescripciónAutor 
 
-Libros
+ 
 
-Autores
+Vistas 
+Id_Libro 
+NombreLibro 
+NombreAutor 
+ID_Vistas 
+	
+Recomendaciones 
+NombreLibro 
+NombreAutor 
+ID_Recomencaciones 
 
-Vistas
+ 
 
-Recomendaciones
-
-
-2. Identificar las relaciones de BOOKFASH.
-
-
-Libros - Autores
-
-Autores - Libros
-
-Vistas - Recomendaciones
-
-Recomendaciones - Vistas
-
-3. Identificar los atributos de cada una de las tablas.
-
-
-Libros
-
-ID_Libro
-
-NombreLibro
-
-NombreAutor
-
-DescripciónLibro
-
-
-Vistas
-
-Id_Libro
-
-NombreLibro
-
-NombreAutor
-
-ID_Vistas
-
-
-
-Autores
-
-ID_Autor
-
-NombreAutor
-
-NombreLibro
-
-DescripciónAutor
-
-
-Recomendaciones
-
-NombreLibro
-
-NombreAutor
-
-ID_Recomencaciones
 
 
 

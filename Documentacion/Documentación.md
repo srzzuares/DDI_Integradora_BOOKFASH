@@ -45,18 +45,24 @@ usuarios puedan navegar por ella sin dificultad.
 
 MODELO RELACIONAL DE BOOKFASH
 1. Determinar las entidades de BOOKFASH.
+
+
 Libros
 Autores
 Vistas
 Recomendaciones
 
 2. Identificar las relaciones de BOOKFASH.
+
+
 Libros Autores
 Autores Libros
 Vistas Recomendaciones
 Recomendaciones Vistas
 
 3. Identificar los atributos de cada una de las tablas.
+
+
 Libros
 ID_Libro
 NombreLibro
@@ -82,3 +88,5 @@ ID_Recomencaciones
 
 
 4. Modelo entidad relación de BOOKFASH
+
+

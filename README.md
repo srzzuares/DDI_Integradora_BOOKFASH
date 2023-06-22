@@ -6,7 +6,10 @@ HISTORIAL DE VERSIONES
 |----------|----------|----------|--------------|-------------|
 | 22/06/23    | 1.0   | JOSSELINE ALVARADO VARGAS   |              |             |
 
-iNFORMACIÓN DEL PROYECTO
+INFORMACIÓN DEL PROYECTO
 
+| EMPRESA/ORGANIZACIÓN | UTXJ |
+|----------------------|------|
+| Proyecto             |BOOKFAHS|
 APROBACIONES
 

@@ -1,6 +1,7 @@
 ![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/dcdbc15e-8e9e-4f03-b913-de6e5dfa4148)
 UNIVERSIDAD TECNOLOGICA DE XICOTEPEC DE JUAREZ
-![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/07b5c169-2c31-413c-a928-04bb2b93f093)
+![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/748439c1-9be1-4de8-a12a-29ce6a1040f2)
+
 
 
 Descripción del Proyecto:

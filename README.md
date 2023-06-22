@@ -18,6 +18,8 @@ INFORMACIÓN DEL PROYECTO
 |Gerente lider de Analisis | Crystian E. Suarez |
 
 
-
 PROBACIONES
+
+|Nombres | Cargo | Departamento u organización | Fecha | Firma |
+|--------|-------|-----------------------------|---------------|
 

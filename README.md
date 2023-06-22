@@ -7,7 +7,7 @@ BOOKFAHS
 
 Informacion del proyecto
 
-| EMPRESA  | UTXJ|    |          |              |             |
+| EMPRESA  | UTXJ|    |  .       |       .      |     .       |
 |----------|----------|----------|--------------|-------------|
 | Row 1    | Cell 2   | Cell 3   |              |             |
 

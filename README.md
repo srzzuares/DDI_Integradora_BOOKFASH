@@ -26,5 +26,7 @@ PROBACIONES
 | Nombres | Cargo | Departamento u organización | Fecha | Firma |
 |--------|-------|-----------------------------|---------------|------------|
 |Josseline Alvarado Vargas| DB Manager | BOOKFAHS | 02/05/23 |             |
+|Josseline Alvarado Vargas| Lider / Documentador | BOOKFAHS | 02/05/23 |             |
 |Crystian E. Suarez Cuevas| Frontend | BOOKFAHS | 02/05/23 |             |
+|Crystian E. Suarez Cuevas| Backend | BOOKFAHS | 02/05/23 |             |
 

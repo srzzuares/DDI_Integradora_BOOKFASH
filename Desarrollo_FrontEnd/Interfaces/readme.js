@@ -1,1 +1,0 @@
-const marco = "Ya fue compartido la liga de acceso a la plataforma Figma para su usuario de UTXJ"

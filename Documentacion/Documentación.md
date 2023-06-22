@@ -1,16 +1,16 @@
 ![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/dcdbc15e-8e9e-4f03-b913-de6e5dfa4148)
-UNIVERSIDAD TECNOLOGICA DE XICOTEPEC DE JUAREZ
+# UNIVERSIDAD TECNOLOGICA DE XICOTEPEC DE JUAREZ
 ![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/748439c1-9be1-4de8-a12a-29ce6a1040f2)
 
 
 
-Descripción del Proyecto:
+# Descripción del Proyecto:
  
 Ofrece una amplia selección de títulos de libros, opciones personalizadas y funciones adicionales para
 mejorar la experiencia general del usuario, Además, la aplicación también puede ofrecer
 recomendaciones personalizadas basadas en los intereses y las lecturas anteriores del usuario.
 
-Contexto del Proyecto:
+# Contexto del Proyecto:
 
 Innovar un sistema de Librerías para mejorar la experiencia del cliente. Para ello, utilizaremos Alexa
 como asistente virtual de Amazon, estará integrado en las diferentes áreas de la librería para que los
@@ -35,7 +35,7 @@ como ajustar el tamaño del texto, cambiar el color de fondo y agregar marcadore
 7. Proporcionar una plataforma para que los usuarios puedan compartir sus opiniones sobre los libros
 que han leído y descubrir nuevas obras recomendadas por otros usuarios.
 
-Requerimientos
+# Requerimientos
 
 Catálogo de libros: La aplicación debe contar con un catálogo completo de los libros disponibles en la
 biblioteca, incluyendo información detallada sobre cada uno, como título, autor, editorial, año de
@@ -79,7 +79,7 @@ Comunidad y socialización: La aplicación puede incluir características social
  
  
 
-Requerimientos no funcionales 
+# Requerimientos no funcionales 
 
 
 Usabilidad: La aplicación debe ser intuitiva y fácil de usar para usuarios de diferentes niveles de experiencia. Debe contar con una interfaz de usuario clara, con navegación sencilla y organización coherente de la información.
@@ -102,7 +102,7 @@ Estabilidad: La aplicación debe ser estable y confiable, minimizando los errore
 
 Cumplimiento normativo: La aplicación debe cumplir con las regulaciones y normativas vigentes, como la protección de datos personales, derechos de autor y leyes de propiedad intelectual.
  
- Reglas de negocio 
+# Reglas de negocio 
 
 Regla de privacidad: La aplicación debe garantizar la privacidad de los usuarios y proteger la confidencialidad de su información personal. No se debe compartir ni divulgar información sin el consentimiento expreso del usuario.
 
@@ -125,7 +125,7 @@ Regla de accesibilidad: La aplicación debe ser accesible para usuarios con disc
 Regla de uso responsable: La aplicación debe fomentar un uso responsable de la lectura y evitar promover contenido inapropiado o perjudicial, como material violento, pornográfico o discriminatorio.
 
 
-MODELO RELACIONAL DE BOOKFASH 
+# MODELO RELACIONAL DE BOOKFASH 
  
 1.	Determinar las entidades de BOOKFASH. 
 

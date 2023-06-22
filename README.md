@@ -31,6 +31,9 @@
 |Crystian E. Suarez Cuevas| Frontend | BOOKFAHS | 02/05/23 |             |
 |Crystian E. Suarez Cuevas| Backend | BOOKFAHS | 02/05/23 |             |
 
+# Funcionalidades: 
+
+Ofrece una amplia selección de títulos de libros, opciones personalizadas y funciones adicionales para mejorar la experiencia general del usuario, Además, la aplicación también puede ofrecer recomendaciones personalizadas basadas en los intereses y las lecturas anteriores del usuario. 
 
 # Propositos de BOOKFASH
 

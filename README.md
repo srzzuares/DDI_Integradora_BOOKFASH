@@ -1,15 +1,15 @@
-BOOKFASH
+# BOOKFASH 
 
 ![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/365497b0-0258-4b65-9736-3f6cf12687fb)
 
 
-HISTORIAL DE VERSIONES
+# HISTORIAL DE VERSIONES
 
 | FECHA    | VERSION  | AUTOR    | ORGANIZACIÓN | DESCRIPCIÓN |
 |----------|----------|----------|--------------|-------------|
 | 02/05/23    | 1.0   | JOSSELINE ALVARADO VARGAS   |  BOOKFASH            |             |
 
-INFORMACIÓN DEL PROYECTO
+# INFORMACIÓN DEL PROYECTO
 
 | EMPRESA/ORGANIZACIÓN | UTXJ |
 |----------------------|------|
@@ -21,7 +21,7 @@ INFORMACIÓN DEL PROYECTO
 |Gerente lider de Analisis | Crystian E. Suarez |
 
 
-PROBACIONES
+# APROBACIONES
 
 | NOMBRES | CARGO | DEPARTAMENTO | FECHA | FIRMA |
 |--------|-------|-----------------------------|---------------|------------|

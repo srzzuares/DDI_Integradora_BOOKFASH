@@ -22,7 +22,7 @@ Con ayuda de Alexa puede mejorar la experiencia del cliente en una librería fí
 respuestas rápidas y personalizadas a las preguntas frecuentes y recomendaciones precisas de un
 historial ya creado.
 
-Objetivos de bookfash
+# Objetivos de bookfash
 
 1. Proporcionar a los usuarios una amplia selección de libros electrónicos en diferentes géneros y
 temas.

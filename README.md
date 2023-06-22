@@ -11,5 +11,15 @@ INFORMACIÓN DEL PROYECTO
 | EMPRESA/ORGANIZACIÓN | UTXJ |
 |----------------------|------|
 | Proyecto             |BOOKFAHS|
-APROBACIONES
+|----------------------|------|
+|Fecha de preparación  |02/05/23|
+|----------------------|------|
+|Cliente               |M.T.I MARCO A. R. H|
+|----------------------|------|
+|
+|----------------------|------|
+|
+
+
+PROBACIONES
 

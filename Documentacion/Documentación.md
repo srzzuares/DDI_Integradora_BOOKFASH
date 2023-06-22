@@ -1,3 +1,4 @@
+![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/dcdbc15e-8e9e-4f03-b913-de6e5dfa4148)
 Descripción del Proyecto:
  
 Ofrece una amplia selección de títulos de libros, opciones personalizadas y funciones adicionales para

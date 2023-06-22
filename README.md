@@ -13,6 +13,9 @@ INFORMACIÓN DEL PROYECTO
 | Proyecto             |BOOKFAHS|
 |Fecha de preparación  |02/05/23|
 |Cliente               |M.T.I MARCO A. R. H|
+|Patrocinador principal | Area TI |
+|Gerente lider del proyecto | Josseline Alvarado |
+|Gerente lider de Analisis | Crystian E. Suarez |
 
 
 

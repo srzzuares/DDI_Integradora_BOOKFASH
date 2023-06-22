@@ -20,7 +20,7 @@ INFORMACIÓN DEL PROYECTO
 
 PROBACIONES
 
-|Nombres | Cargo | Departamento u organización | Fecha | Firma |
+| Nombres | Cargo | Departamento u organización | Fecha | Firma |
 |--------|-------|-----------------------------|---------------|
 |Josseline Alvarado Vargas| DB Manager | BOOKFAHS | 02/05/23 |
 

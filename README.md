@@ -1,5 +1,8 @@
 BOOKFAHS
 
+![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/365497b0-0258-4b65-9736-3f6cf12687fb)
+
+
 HISTORIAL DE VERSIONES
 
 | FECHA    | VERSION  | AUTOR    | ORGANIZACIÓN | DESCRIPCIÓN |

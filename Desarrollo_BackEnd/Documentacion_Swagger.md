@@ -43,11 +43,228 @@ Utilizaremos un Api rest con Mongo sencillo, para este ejemplo esta cargado en G
 
 Acontinuación ya creada la carpeta con los archivos esenciales donde tengamos la Api, abriremos la terminal de visual studio code para instalar dependencias para nuestra documentación Swwagger.
 
-- $ npm i swagger-jsdoc swagger-ui-express
+```bash
+npm i swagger-jsdoc swagger-ui-express
+```
 
-Después de la instalación haya sido completa, requerimos los paquetes como:
-- //Swagger
-- const swaggerUI = require(  
+
+Después de la instalación haya sido completa, requerimos los siguiente paquetes de Swagger y el path para saber el raiz de nuestro proyecto:
+```javascript
+//Path
+const path = require('path') //Raiz del proyecto 
+//Swagger
+const swaggerUI = require('swagger-ui-express') // Interfaz del usuario de Swagger
+const swaggerJsDoc = require('swagger-jsdoc') // Documentacion de swagger
+```
+
+Crearemos un objeto para darle especificaciones de swagger y en el codigo se describe cada cosa que se utiliza en el objeto:
+```javascript
+//Object Swagger
+const swaggerSpec = {
+    definition: { //Definimos el objeto
+        openapi: "3.0.0", //Que version de swagger utilizaremos
+        info: { //La informacion del objeto
+            title: "Api-Node JS, Mongo y Swagger", //Titulo del proyecto
+            version: "1.0.0" //Version del proyecto
+        },
+        servers: [ //Servicios
+            {
+                url: "http://localhost:3030" //Servicio donde inicializamos el proyecto NodeJs
+            }
+        ]
+    },
+    apis: [ //Apis que creamos
+        `${path.join(__dirname, './routes/obras.Routes.js')}` //Solo tenemos una llamada obras.Routes, asi que con el path podremos encontrar el proyecto
+    ]
+}
+//Midleware
+APP.use('/api-doc', swaggerUI.serve, swaggerUI.setup(swaggerJsDoc(swaggerSpec))) //creamos un middleware para el servicio de swagger
+/* Para esto primero es la ruta de acces, segundo inicializamos el servidor, tercero inicializamos el UI.setup y 
+dentro inicializamos el jsDoc y por ultimo el objeto ya especificado   */
+```
+Dentro de las Rutas creamos la documentacion:
+
+```javascript
+const { Router } = require('express')
+const rooteable = Router()
+const OCLL = require('../controllers/obrasControllers')
+
+/**
+ *  @swagger
+ *  components:
+ *      schemas:
+ *       User:
+ *        type: object
+ *        properties:
+ *         idObra:
+ *          type: String
+ *          description: Un identificador 
+ *         nombreObra:
+ *          type: String
+ *          description: Nombre de la obra
+ *         tamanoObra:
+ *          type: String
+ *          description: Medidas de la obra
+ *         tecnicaObra:
+ *          type: String
+ *          description: Tipo de tecnica
+ *         materialesObra:
+ *          type: String
+ *          description: materiales que contiene la obra
+ *         valorEconomicoObra:
+ *          type: Number
+ *          description: Costo de la obra o a la venta
+ *         nombreAutor:
+ *          type: String
+ *          description: Nombre del autor de la obra
+ *         telefonoAutor:
+ *          type: Integer
+ *          description: Numero telefonico
+ *         correoAutor:
+ *          type: String
+ *          description: Correo del autor
+ *        required:
+ *         - idObra
+ *         - nombreObra
+ *         - nombreAutor
+ *         - correoAutor
+ *        example:
+ *         idObra: 1
+ *         nombreObra: La Soledad
+ *         tamanoObra: Mediano 40x80
+ *         tecnicaObra: Oleo con acrilico
+ *         materialesObra: Pintura, Lienzo
+ *         valorEconomicoObra: 1000
+ *         nombreAutor: Crystian
+ *         telefonoAutor: 7641112222
+ *         correoAutor: crys@gmail.com
+ */
+
+
+/**
+ *  @swagger
+ *  /:
+ *  get:
+ *      summary: Retorna todas las obras creadas
+ *      tags: [User]
+ *      responses:
+ *          200:
+ *              description: Todas las obras creadas
+ *              content:
+ *                  application/json:
+ *                      schema:
+ *                          type: array
+ *                          items:
+ *                              $ref: '#/components/schemas/User'
+ */
+rooteable.get('/', OCLL.obtenerObra)
+
+/**
+ *  @swagger
+ *  /obtAct/{idOb}:
+ *  get:
+ *      summary: Retorna una id de Obra
+ *      tags: [User]
+ *      parameters:
+ *          - in: path
+ *            name: idOb
+ *            required: true
+ *            schema:
+ *                type: string
+ *            description: Identificacion de la obra
+ *      responses:
+ *          200:
+ *              description: Todas las obras creadas
+ *              content:
+ *                  application/json:
+ *                      schema:
+ *                          type: object
+ *                          $ref: '#/components/schemas/User'
+ *          404:
+ *              description: Identificacion no encontrada
+ */
+rooteable.get('/obtAct/:idOb', OCLL.obtenerOneObra)
+
+/**
+ *  @swagger
+ *  /crear:
+ *      post:
+ *          summary: Crear una obra de arte
+ *          tags: [User]
+ *          requestBody:
+ *              required: true
+ *              content:
+ *                  application/json:
+ *                      schema:
+ *                          type: object
+ *                          $ref: '#/components/schemas/User'
+ *          responses:
+ *              200:
+ *                  description: Success created 
+ */
+rooteable.post('/crear', OCLL.guardarObras)
+
+/**
+ *  @swagger
+ *  /actualizar/{idOb}:
+ *  put:
+ *      summary: actualizar una obra
+ *      tags: [User]
+ *      parameters:
+ *          - in: path
+ *            name: idOb
+ *            required: true
+ *            schema:
+ *                type: string
+ *            description: Identificacion de la obra
+ *      requestBody:
+ *              required: true
+ *              content:
+ *                  application/json:
+ *                      schema:
+ *                          type: object
+ *                          $ref: '#/components/schemas/User'
+ *      responses:
+ *          200:
+ *              description: Obra actualizada
+ *              content:
+ *                  application/json:
+ *                      schema:
+ *                          type: object
+ *                          $ref: '#/components/schemas/User'
+ *          404:
+ *              description: Identificacion no encontrada
+ */
+rooteable.put('/actualizar/:idOb', OCLL.actualizaObra)
+
+/**
+ *  @swagger
+ *  /eliminar/{idOb}:
+ *  delete:
+ *      summary: Elimina una obra
+ *      tags: [User]
+ *      parameters:
+ *          - in: path
+ *            name: idOb
+ *            required: true
+ *            schema:
+ *                type: string
+ *            description: Identificacion de la obra
+ *      responses:
+ *          200:
+ *              description: Obra Eliminada
+ *              content:
+ *                  application/json:
+ *                      schema:
+ *                          type: object
+ *                          $ref: '#/components/schemas/User'
+ *          400:
+ *              description: Identificacion no encontrada
+ */
+rooteable.delete('/eliminar/:idOb', OCLL.eliminaObra)
+
+```
+
 
 
 ## Conclusión
@@ -58,4 +275,4 @@ Swagger es una herramienta poderosa para describir, diseñar y documentar las AP
 Además, las herramientas adicionales como Swagger UI y Swagger Codegen permiten generar automáticamente documentación y código cliente o servidor a partir del archivo ADL. En resumen, si deseas crear una documentación efectiva para tu API, considera utilizar Swagger.
 
 [GitHub_Srzzuares](https://github.com/srzzuares?tab=repositories)
-![Alt text](/path/to/img.jpg "Optional title")
+[srzzuares/Practica_ApiNode Completado](https://github.com/srzzuares/Practica_ApiNode)

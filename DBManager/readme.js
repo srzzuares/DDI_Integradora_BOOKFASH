@@ -1,1 +1,0 @@
-const marco = "En proceso, los datos.sql solo es informacion de libros "

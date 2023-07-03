@@ -1,11 +1,18 @@
 ## Swagger 
 
-Es una herramienta para API (Interfaz de Programación de Aplicaiones), que sirve para describir, diseñar y documentar
-de una manera clara y concisa. En este recorrido, exploraremos los conceptos básicos de Swagger y como se puede utilizar para crear una documentación efectiva.
+<p style="text-align: justify>    
+    
+Es una herramienta para API (Interfaz de Programación de Aplicaiones), que sirve para describir, diseñar y documentar de una manera clara y concisa. En este recorrido, exploraremos los conceptos básicos de Swagger y como se puede utilizar para crear una documentación efectiva.
+    
+</p>
+
 
 
 ## ¿Qué es Swagger?
 
+
+<p style="text-align: justify">    
+    
 Swagger es de código abierto que fué creado por Tony Tam en 2011 y ha sido adoptado por muchas empresas líderes en tecnología como Google, Microsoft y IBM.
 
 
@@ -16,16 +23,22 @@ Además del lenguaje ADL, Swagger también incluye una serie de herramientas adi
 1. ***Swagger UI:*** Una interfaz web interactiva que muestra la documentación generada automáticamente a partir del lenguaje ADL.
 2. ***Swagger Editor:*** Un editor visual para crear y editar archivos ADL.
 3. ***Swagger Codegen:*** Una herramienta que genera código cliente o servidor a partir del archivo ADL.
-
+   
+</p>
 
 ## ¿Por qué usar Swagger?
 
+<p style="text-align: justify">    
+
+    
 Hay varias razones por las cuales los desarrolladores pueden optar por utilizar Swagger para documentar sus API:
 
 - ___Consistencia:___ Al utilizar un formato estandarizado como el lenguaje ADL, se asegura que la documentación sea coherente en toda la organización.
 - ___Compartibilidad:___ La información sobre la API se puede compartir fácilmente entre diferentes equipos y plataformas.
 - ___Automatización:___ Al utilizar herramientas como Swagger UI y Swagger Codegen, se puede generar documentación y código automáticamente, lo que ahorra tiempo y reduce errores.
 - ___Claridad:___ La documentación generada por Swagger es clara y fácil de entender, lo que facilita la adopción de la API por parte de los desarrolladores.
+
+</p>
 
 ## Entorno
 
@@ -37,11 +50,14 @@ Hay varias razones por las cuales los desarrolladores pueden optar por utilizar 
 
 ### Cómo utilizar Swagger
 
+<p style="text-align: justify">    
 
 Utilizaremos un Api rest con Mongo sencillo, para este ejemplo esta cargado en GitHub ya realizado con Swagger como [srzzuares/Practica_ApiNode](https://github.com/srzzuares/Practica_ApiNode)
 
 
 Acontinuación ya creada la carpeta con los archivos esenciales donde tengamos la Api, abriremos la terminal de visual studio code para instalar dependencias para nuestra documentación Swwagger.
+
+</p>
 
 ```bash
 npm i swagger-jsdoc swagger-ui-express

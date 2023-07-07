@@ -1,7 +1,7 @@
 # BOOKFASH 
 
    
-![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/04aceb1d-a28c-4346-a0e1-03c2abc32064)     ![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/51d4a167-96ea-40aa-84b2-c345b48733ad)
+![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/04aceb1d-a28c-4346-a0e1-03c2abc32064)  ![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/51d4a167-96ea-40aa-84b2-c345b48733ad)
 
 # ORGANIGRAMA DE LA EMPRESA
 <p align="center">
@@ -56,6 +56,10 @@
 5. Se llevará a cabo la gestión y mantenimiento del proyecto para asegurar su continuidad en el tiempo.
 6. Establecer alianzas con bibliotecas públicas, privadas, virtuales y centros educativos para obtener recursos de libros, revistas, periódicos y otros materiales para ampliar el acervo bibliográfico disponible.
 
+# FUNCIONALIDADES
+
+Ofrece una amplia selección de títulos de libros, opciones personalizadas y funciones adicionales para mejorar la experiencia general del usuario, Además, la aplicación también puede ofrecer recomendaciones personalizadas basadas en los intereses y las lecturas anteriores del usuario. 
+
 # REQUERIMIENTOS FUNCIONALES
 
 1. La aplicación contara con un catálogo completo de los libros disponibles en la biblioteca, incluyendo información detallada sobre cada uno. 
@@ -84,9 +88,7 @@
 4. Regla de imparcialidad: La aplicación debe evitar sesgos injustos en las recomendaciones. 
 5. Regla de retroalimentación: La aplicación debe permitir a los usuarios proporcionar retroalimentación sobre las recomendaciones recibidas.
 
-# FUNCIONALIDADES
 
-Ofrece una amplia selección de títulos de libros, opciones personalizadas y funciones adicionales para mejorar la experiencia general del usuario, Además, la aplicación también puede ofrecer recomendaciones personalizadas basadas en los intereses y las lecturas anteriores del usuario. 
 
 
 

@@ -88,6 +88,26 @@ Ofrece una amplia selección de títulos de libros, opciones personalizadas y fu
 4. Regla de imparcialidad: La aplicación debe evitar sesgos injustos en las recomendaciones. 
 5. Regla de retroalimentación: La aplicación debe permitir a los usuarios proporcionar retroalimentación sobre las recomendaciones recibidas.
 
+# CLASES Y CARACTERISTIVAS DE LOS USUARIOS
+
+1. Lectores ávidos: Usuarios que leen con frecuencia y tienen amplios intereses en diferentes géneros literarios.
+2. Newbies: Usuarios que se inician en el mundo de la lectura y buscan consejos sobre cómo empezar.
+3. Expertos: Usuarios que tienen un conocimiento profundo en un campo o género específico y buscan recomendaciones de expertos.
+4. Curador de contenido: un experto literario que selecciona y clasifica los libros disponibles en la aplicación para garantizar una biblioteca diversa y de alta calidad.
+5. Evaluadores de usuarios: usuarios o equipos expertos que evalúan y revisan las recomendaciones generadas por algoritmos para garantizar su relevancia y calidad.
+
+# ENTORNO OPERATIVO
+
+Smartwatch:
+- Tizen: Algunos smartwatches de Samsung utilizan el sistema operativo Tizen. En este entorno, nuestra aplicación de libros podría aprovechar las capacidades del smartwatch para mostrar texto e imágenes en una pantalla pequeña, permitiendo a los usuarios leer libros en su muñeca. También podría integrarse con funciones como notificaciones de lectura, marcadores, etc.
+- Wear OS: Smartwatches que utilizan el sistema operativo Wear OS de Google pueden admitir nuestra aplicación de libros. Este entorno proporciona una integración con servicios de  recomendación de libros y puede incluir funciones como navegación para ver autores y compatibilidad con comandos de voz para el control de lectura.
+
+Smart TV:
+- Android TV: Si la smart TV utiliza el sistema operativo Android TV, la aplicación de libros puede desarrollarse utilizando las herramientas y bibliotecas de desarrollo de Android. Esto permitiría a los usuarios navegar por una biblioteca de libros, leer en pantalla completa o en modo de lectura en columna, realizar búsquedas.
+- WebOS: Algunas smart TVs de LG utilizan el sistema operativo WebOS. En este entorno, una aplicación de libros podría desarrollarse como una aplicación web que se ejecuta en el navegador incorporado de la TV. Esto permitiría funciones de lectura y navegación similares a las de una aplicación de libros en un navegador de escritorio.
+
+
+
 
 
 

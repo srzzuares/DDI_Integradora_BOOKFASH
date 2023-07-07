@@ -281,6 +281,7 @@ rooteable.delete('/eliminar/:idOb', OCLL.eliminaObra)
 
 ```
 
+![Swagger Implementado](/Utils/Swagger.png)
 
 
 ## Conclusión

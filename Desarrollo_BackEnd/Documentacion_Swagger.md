@@ -280,8 +280,8 @@ rooteable.put('/actualizar/:idOb', OCLL.actualizaObra)
 rooteable.delete('/eliminar/:idOb', OCLL.eliminaObra)
 
 ```
-
-![Swagger Implementado](/Utils/Swagger.png)
+Implementado Swagger
+![Swagger Implementado](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/blob/main/Desarrollo_BackEnd/Utils/Swagger.png)
 
 
 ## Conclusión

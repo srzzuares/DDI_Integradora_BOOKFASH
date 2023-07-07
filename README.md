@@ -5,7 +5,7 @@
 
 # ORGANIGRAMA DE LA EMPRESA
 <p align="center">
-  <img width="500" height="500" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/bbba864a-ac0e-413e-8e0c-eb2010dd4e7d">
+  <img width="800" height="400" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/de3e9929-74d5-4283-a111-4dba026797f1">
 </p>
 
 

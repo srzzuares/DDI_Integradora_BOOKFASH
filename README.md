@@ -1,9 +1,10 @@
 # BOOKFASH 
 
-     ![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/479cbef5-ad8b-46a4-88df-b3e891d1885c)
-
 ![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/04aceb1d-a28c-4346-a0e1-03c2abc32064)
 
+<p align="center">
+  <img width="500" height="500" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/bbba864a-ac0e-413e-8e0c-eb2010dd4e7d">
+</p>
 
 
 # HISTORIAL DE VERSIONES

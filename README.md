@@ -49,11 +49,40 @@
 
 # ALCANCE DEL PROYECTO
 
-1. Selección de libros especializados: Se seleccionarán una variedad de libros especializados en diferentes áreas del conocimiento para satisfacer las necesidades de los usuarios.
-2. Adquisición de libros: Se adquirirán los libros seleccionados para formar una colección que estará disponible para su consulta gratuita.
-3. Creación de un espacio virtual: Se creará un espacio virtual en el cual los usuarios podrán acceder a la colección de libros especializados.
-4. Promoción del proyecto: Se promocionará el proyecto a través de diferentes medios para darlo a conocer al público objetivo y fomentar su uso.
-5. Gestión y mantenimiento del proyecto: Se llevará a cabo la gestión y mantenimiento del proyecto para asegurar su continuidad en el tiempo.
+1. Se seleccionarán una variedad de libros especializados en diferentes áreas del conocimiento para satisfacer las necesidades de los usuarios.
+2. Se adquirirán los libros seleccionados para formar una colección que estará disponible para su consulta gratuita.
+3. Se creará un espacio virtual en el cual los usuarios podrán acceder a la colección de libros especializados.
+4. Se promocionará el proyecto a través de diferentes medios para darlo a conocer al público objetivo y fomentar su uso.
+5. Se llevará a cabo la gestión y mantenimiento del proyecto para asegurar su continuidad en el tiempo.
+6. Establecer alianzas con bibliotecas públicas, privadas, virtuales y centros educativos para obtener recursos de libros, revistas, periódicos y otros materiales para ampliar el acervo bibliográfico disponible.
+
+# REQUERIMIENTOS FUNCIONALES
+
+1. La aplicación contara con un catálogo completo de los libros disponibles en la biblioteca, incluyendo información detallada sobre cada uno. 
+2. La aplicación tendrá una función de búsqueda avanzada que permita a los usuarios buscar libros por diferentes criterios.
+3. La aplicación contara con medidas adecuadas para garantizar la seguridad y privacidad de la información personal.
+4. La aplicación contara con una interfaz intuitiva y fácil de usar para que los usuarios puedan navegar por ella sin dificultad.
+5. La aplicación sera capaz de ofrecer recomendaciones de libros basadas en los intereses y preferencias de cada usuario.
+6. Los usuarios pueden optar por recibir notificaciones y alertas sobre nuevos lanzamientos de libros, ofertas especiales, actualizaciones de sus autores favoritos, etc.
+
+   
+# REQUERIMIENTOS NO FUNCIONALES
+
+1. La aplicación debe ser intuitiva y fácil de usar para usuarios de diferentes niveles de experiencia. 
+2. La aplicación debe ser rápida y responder de manera eficiente a las acciones del usuario. 
+3. La aplicación debe garantizar la seguridad y privacidad de los datos de los usuarios. 
+4. La aplicación debe estar disponible y accesible para los usuarios en todo momento.
+5. La aplicación debe ser capaz de manejar un crecimiento en el número de usuarios y el volumen de datos sin comprometer su rendimiento. 
+6. La aplicación debe ser capaz de adaptarse a diferentes idiomas.
+7. La aplicación debe ser fácil de mantener y actualizar. Esto implica tener un código limpio y bien documentado, utilizar estándares y buenas prácticas de programación.
+
+# REGLAS DE NEGOCIO 
+
+1. Regla de privacidad: La aplicación debe garantizar la privacidad de los usuarios y proteger la confidencialidad de su información personal. 
+2. Regla de respeto de derechos de autor: La aplicación solo debe recomendar libros que cumplan con los derechos de autor y no infrinjan la propiedad intelectual de terceros.
+3. Regla de transparencia: La aplicación debe ser transparente en cuanto a cómo se generan las recomendaciones. 
+4. Regla de imparcialidad: La aplicación debe evitar sesgos injustos en las recomendaciones. 
+5. Regla de retroalimentación: La aplicación debe permitir a los usuarios proporcionar retroalimentación sobre las recomendaciones recibidas.
 
 # FUNCIONALIDADES
 

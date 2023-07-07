@@ -1,7 +1,9 @@
 # BOOKFASH 
 
-![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/04aceb1d-a28c-4346-a0e1-03c2abc32064)
+   
+![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/04aceb1d-a28c-4346-a0e1-03c2abc32064)     ![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/51d4a167-96ea-40aa-84b2-c345b48733ad)
 
+# ORGANIGRAMA DE LA EMPRESA
 <p align="center">
   <img width="500" height="500" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/bbba864a-ac0e-413e-8e0c-eb2010dd4e7d">
 </p>

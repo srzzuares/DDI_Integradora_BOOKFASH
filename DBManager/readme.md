@@ -1,7 +1,7 @@
 # 1.	IDENTIFICACION DE ENTIDADES
 
-| Libros | Autores | Genero  | Vistas | Recomendaciones|
-|--------|---------|---------|--------|----------------|
+| Libros | Autores | Vistas | Recomendaciones|
+|--------|---------|--------|----------------|
 
 # 2.	IDENTIFICACION DE ATRIBUTOS
 

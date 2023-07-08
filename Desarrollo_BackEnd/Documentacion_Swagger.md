@@ -280,8 +280,30 @@ rooteable.put('/actualizar/:idOb', OCLL.actualizaObra)
 rooteable.delete('/eliminar/:idOb', OCLL.eliminaObra)
 
 ```
+
 Implementado Swagger
+
 ![Swagger Implementado](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/blob/main/Desarrollo_BackEnd/Utils/Swagger.png)
+
+Obtiene todos los Datos
+
+![Swagger Implementado Obtiene todos los datos](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/blob/main/Desarrollo_BackEnd/Utils/SwaggerGetAll.png?raw=true)
+
+Obtine un dato por ID
+
+![Swagger Obtine un dato](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/blob/main/Desarrollo_BackEnd/Utils/SwaggerGetOne.png?raw=true)
+
+Guarda un dato
+
+![Swagger Envia datos a guardar](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/blob/main/Desarrollo_BackEnd/Utils/SwaggerPost.png?raw=true)
+
+Actualiza un dato por ID
+
+![Swagger Actualiza un dato por ID](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/blob/main/Desarrollo_BackEnd/Utils/SwaggerPut.png?raw=true)
+
+Elimina un dato por ID
+
+![Swagger Elimina un dato por ID](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/blob/main/Desarrollo_BackEnd/Utils/SwaggerSchema.png?raw=true)
 
 
 ## Conclusión

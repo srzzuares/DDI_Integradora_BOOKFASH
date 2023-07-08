@@ -34,12 +34,21 @@
 # ASIGNACIÓN DE CARDINALIDADES Y GRADOS DE RELACIÓN
 
 <p align="center">
-  <img width="500" height="400" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/513ae0fa-ad25-4221-b9e6-5a8fa291d189">
+  <img width="500" height="400" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/0dbe97cb-60e2-4466-977c-a50a39ff124a">
 </p>
+
 
 <p align="center">
   <img width="500" height="400" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/f562a1cf-3aff-4c75-aa51-d6d5b26534f4">
 </p>
 
+# INTEGRACIÓN DEL MODELO COMPLETO
+<p align="center">
+  <img width="950" height="450" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/0159d34c-2755-4ff4-a363-ba5053a1092c">
+</p>
 
+# OPTIMIZACIÓN DEL MODELO FINAL
 
+<p align="center">
+  <img width="950" height="450" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/c1d9781a-ba2e-4c2a-92e5-23a608494b7b">
+</p>

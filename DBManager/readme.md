@@ -10,7 +10,7 @@
   <img width="800" height="400" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/75391b3d-d78a-4164-9ce0-5c5b708e8830">
 </p>
 
-# Autores
+# Vistas
 
 <p align="center">
   <img width="800" height="400" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/a508ebfc-1d3a-4f75-84a2-a3f84aa32dee">
@@ -21,7 +21,7 @@
   <img width="800" height="400" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/80a59872-bd56-4c3e-ae6d-484e0049fc43">
 </p>
 
-# Vistas
+# Autor
 <p align="center">
   <img width="500" height="400" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/3c566f48-aee7-4c9a-bdc6-b851ba6f526f">
 </p>

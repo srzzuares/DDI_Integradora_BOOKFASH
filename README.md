@@ -100,22 +100,22 @@ Ofrece una amplia selección de títulos de libros, opciones personalizadas y fu
 
 # ENTORNO OPERATIVO
 
-Smartwatch:
-- Tizen: Algunos smartwatches de Samsung utilizan el sistema operativo Tizen. En este entorno, nuestra aplicación de libros podría aprovechar las capacidades del smartwatch para mostrar texto e imágenes en una pantalla pequeña, permitiendo a los usuarios leer libros en su muñeca. También podría integrarse con funciones como notificaciones de lectura, marcadores, etc.
-
-- Wear OS: Smartwatches que utilizan el sistema operativo Wear OS de Google pueden admitir nuestra aplicación de libros. Este entorno proporciona una integración con servicios de recomendación de libros y puede incluir funciones como navegación para ver autores y compatibilidad con comandos de voz para el control de lectura.
-
-
-Smart TV:
-- Android TV: Si la smart TV utiliza el sistema operativo Android TV, la aplicación de libros puede desarrollarse utilizando las herramientas y bibliotecas de desarrollo de Android. Esto permitiría a los usuarios navegar por una biblioteca de libros, leer en pantalla completa o en modo de lectura en columna, realizar búsquedas.
-- 
-- WebOS: Algunas smart TVs de LG utilizan el sistema operativo WebOS. En este entorno, una aplicación de libros podría desarrollarse como una aplicación web que se ejecuta en el navegador incorporado de la TV. Esto permitiría funciones de lectura y navegación similares a las de una aplicación de libros en un navegador de escritorio.
+| Smartwatch                |                 |              |                |             |        
+|---------------------------|-----------------|--------------|----------------|-------------|
+| Sistema Operativo         | Descripción     | Versiones    | Almacenamineto | Procesador  |
+| Tizen OS / Samsung           | En este entorno, nuestra aplicación de libros podría aprovechar las capacidades del smartwatch para mostrar texto e imágenes en una pantalla pequeña  |     Tizen Os 5.5     |      4 GB / 8 GB           | Exynos W920     |
+| WearOs   | Smartwatches que utilizan el sistema operativo Wear OS de Google pueden admitir nuestra aplicación de libros.  | WearOS 2.36 |  4 GB / 8 GB     |  Qualcomm Snapdragon Wear 3100, Qualcomm Snapdragon Wear 4100 y 4100 Plus    |
 
 
+| Smart TV                  |                 |              |                |             |        
+|---------------------------|-----------------|--------------|----------------|-------------|
+| Sistema Operativo         | Descripción     | Versiones    | Almacenamineto | Procesador  |
+| Android TV                | Android TV es un sistema operativo desarrollado por Google basado en el sistema operativo Android | Android 11   |   8 GB / 128 GB    |  Qualcomm, MediaTek, Amlogic y Rockchip  |
+| webOS                     | SO desarrollado por LG Electronics para sus Smart TVs. Es conocido por su interfaz de usuario sencilla y fácil de usar. |  webOS 6.0 |  4 GB / 16 GB | MediaTek, Qualcomm  |
+| Tizen OS                  | SO desarrollado por Samsung Electronics para sus Smart TVs. Ofrece una interfaz de usuario intuitiva y fluida, así como una amplia selección de aplicaciones y servicios de entretenimiento.  |Tizen 5.5 |4 GB / 16 GB | Tizen TV SoC |
 
-
-
-
-
-
+| Alexa Voice               |                 |              |                |             |        
+|---------------------------|-----------------|--------------|----------------|-------------|
+| Nombre                    | Descripción     | Versiones    | Almacenamineto | Procesador  |
+| Alexa Voice               |  Alexa Voice es un asistente de voz basado en la nube que utiliza el procesamiento del lenguaje natural para responder preguntas, realizar tareas y controlar dispositivos conectados.         |        V. 3      |         Alexa Voice no requiere un almacenamiento significativo         |  No asociado           |  
 

@@ -6,7 +6,7 @@
 
 ![Paso3](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/7fec3177-35bb-4366-99c2-52dbe61c6927)
 
-![Paso4](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/ae222b37-da41-47be-b024-58d9b734577f)
+![Paso4](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/9210b27d-9ba9-4ec8-a090-aaa665a196d3)
 
 ![Paso5](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/5b15bdea-75d5-47ca-a31b-7c80205e8b03)
 

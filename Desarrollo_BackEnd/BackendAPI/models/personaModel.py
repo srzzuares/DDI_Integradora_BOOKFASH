@@ -1,4 +1,4 @@
-from sqlalchemy import Table, Column, Integer, String, Boolean, Date, Sequence
+from sqlalchemy import Table, Column, Integer, String, Boolean, Date, Sequence,Enum
 from config.db import meta, engine
 
 persona = Table("persona", meta,

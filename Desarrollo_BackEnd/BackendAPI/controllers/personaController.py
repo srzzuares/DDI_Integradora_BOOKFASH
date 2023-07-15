@@ -43,8 +43,25 @@ def get_person(idpersona):
 def get_create(data):
     conn.execute(persona.insert().values(dict(data)))
     conn.commit()
-    res={'message': "Student successfully"}
+    res={'message': "Presona Agregada"}
     return res
 
+def get_update(data,idpersona):
+    ip = get_person(idpersona)
+    console.log(ip)
+    if ip.get("status") == "No existe la persona"
+      return ip
+    else: 
+      result = conn.execute(persona.update().values(dict(data)).where(persona.c.id_persona == idpersona))
+      conn.commit()
+    return result.last_update_params()
 
-
+def get_delete(idpersona): 
+  ip = get_person(idpersona)
+  if ip.get("status") == "No existe la persona"
+     return ip 
+  else:
+    result = conn.execute(persona.delete().where(persona.c.id_persona == idpersona))
+    conn.commit()
+    res = {"status": "Persona eliminada"}
+    return res

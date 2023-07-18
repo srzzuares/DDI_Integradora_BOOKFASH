@@ -185,6 +185,7 @@ CREATE TABLE `persona` (
   `id_persona` int NOT NULL AUTO_INCREMENT,
   `nombre` varchar(100) NOT NULL,
   `apellido` varchar(100) NOT NULL,
+  `genero` varchar(100) NOT NULL,
   `correo` varchar(100) NOT NULL,
   `contrasena` varchar(45) NOT NULL,
   `estatus` enum('Activo','Inactivo') NOT NULL DEFAULT 'Activo',

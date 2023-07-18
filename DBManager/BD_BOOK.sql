@@ -2,7 +2,7 @@ CREATE DATABASE  IF NOT EXISTS `bookfash` /*!40100 DEFAULT CHARACTER SET utf8mb4
 USE `bookfash`;
 -- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
 --
--- Host: localhost    Database: bookfash
+-- Host: 127.0.0.1    Database: bookfash
 -- ------------------------------------------------------
 -- Server version	8.0.33
 
@@ -185,13 +185,13 @@ CREATE TABLE `persona` (
   `id_persona` int NOT NULL AUTO_INCREMENT,
   `nombre` varchar(100) NOT NULL,
   `apellido` varchar(100) NOT NULL,
-  `genero` varchar(100) NOT NULL,
   `correo` varchar(100) NOT NULL,
   `contrasena` varchar(45) NOT NULL,
   `estatus` enum('Activo','Inactivo') NOT NULL DEFAULT 'Activo',
   `fecha_nacimiento` date NOT NULL,
   `fecha_actualizacion` timestamp NULL DEFAULT NULL,
   `fecha_registro` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `genero` enum('Hombre','Mujer') NOT NULL,
   PRIMARY KEY (`id_persona`),
   UNIQUE KEY `correo_UNIQUE` (`correo`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -203,7 +203,7 @@ CREATE TABLE `persona` (
 
 LOCK TABLES `persona` WRITE;
 /*!40000 ALTER TABLE `persona` DISABLE KEYS */;
-INSERT INTO `persona` VALUES (1,'sr','string','string','string','Activo','2023-07-18','2023-07-18 06:55:43','2023-07-18 00:12:49'),(3,'string','string','dddddd','string','Activo','2023-07-18',NULL,'2023-07-18 07:07:01');
+INSERT INTO `persona` VALUES (1,'sr','string','string','string','Activo','2023-07-18','2023-07-18 06:55:43','2023-07-18 00:12:49','Hombre'),(3,'string','string','dddddd','string','Activo','2023-07-18',NULL,'2023-07-18 07:07:01','Hombre');
 /*!40000 ALTER TABLE `persona` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -269,14 +269,6 @@ LOCK TABLES `valoracion` WRITE;
 /*!40000 ALTER TABLE `valoracion` DISABLE KEYS */;
 /*!40000 ALTER TABLE `valoracion` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping events for database 'bookfash'
---
-
---
--- Dumping routines for database 'bookfash'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -287,4 +279,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-17 19:29:13
+-- Dump completed on 2023-07-18 11:19:34

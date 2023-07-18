@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `bookfash` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `bookfash`;
 -- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
 --
 -- Host: localhost    Database: bookfash
@@ -24,13 +26,15 @@ DROP TABLE IF EXISTS `autor`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `autor` (
   `id_autor` int NOT NULL,
-  `nombre` varchar(100) DEFAULT NULL,
-  `totallibro` int DEFAULT NULL,
+  `cantidadlibros` int DEFAULT NULL,
   `biografiaAutor` varchar(100) DEFAULT NULL,
   `fecha_registro` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `fecha_actualizacion` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `estatus` enum('Activo','Inactivo') DEFAULT 'Activo',
-  PRIMARY KEY (`id_autor`)
+  `id_persona` int DEFAULT NULL,
+  PRIMARY KEY (`id_autor`),
+  KEY `id_persona_idx` (`id_persona`),
+  CONSTRAINT `id_persona` FOREIGN KEY (`id_persona`) REFERENCES `persona` (`id_persona`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -146,15 +150,18 @@ CREATE TABLE `libro` (
   `fecha_registro` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `fecha_actualizacion` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `estatus` enum('Activo','Inactivo') DEFAULT 'Activo',
+  `id_valoracion` int DEFAULT NULL,
   PRIMARY KEY (`id_libro`),
   KEY `id_autor` (`id_autor`),
   KEY `id_criterio` (`id_criterio`),
   KEY `id_editorial` (`id_editorial`),
   KEY `id_genero` (`id_genero`),
+  KEY `libro_ibfk_5_idx` (`id_valoracion`),
   CONSTRAINT `libro_ibfk_1` FOREIGN KEY (`id_autor`) REFERENCES `autor` (`id_autor`),
   CONSTRAINT `libro_ibfk_2` FOREIGN KEY (`id_criterio`) REFERENCES `criterio` (`id_criterio`),
   CONSTRAINT `libro_ibfk_3` FOREIGN KEY (`id_editorial`) REFERENCES `editorial` (`id_editorial`),
-  CONSTRAINT `libro_ibfk_4` FOREIGN KEY (`id_genero`) REFERENCES `genero` (`id_genero`)
+  CONSTRAINT `libro_ibfk_4` FOREIGN KEY (`id_genero`) REFERENCES `genero` (`id_genero`),
+  CONSTRAINT `libro_ibfk_5` FOREIGN KEY (`id_valoracion`) REFERENCES `valoracion` (`id_valoracion`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -175,15 +182,18 @@ DROP TABLE IF EXISTS `persona`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `persona` (
-  `id_persona` int NOT NULL,
-  `nombre` varchar(100) DEFAULT NULL,
-  `apellido` varchar(100) DEFAULT NULL,
-  `edad` int DEFAULT NULL,
+  `id_persona` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(100) NOT NULL,
+  `apellido` varchar(100) NOT NULL,
+  `correo` varchar(100) NOT NULL,
+  `contrasena` varchar(45) NOT NULL,
+  `estatus` enum('Activo','Inactivo') NOT NULL DEFAULT 'Activo',
+  `fecha_nacimiento` date NOT NULL,
+  `fecha_actualizacion` timestamp NULL DEFAULT NULL,
   `fecha_registro` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `fecha_actualizacion` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `estatus` enum('Activo','Inactivo') DEFAULT 'Activo',
-  PRIMARY KEY (`id_persona`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`id_persona`),
+  UNIQUE KEY `correo_UNIQUE` (`correo`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -192,6 +202,7 @@ CREATE TABLE `persona` (
 
 LOCK TABLES `persona` WRITE;
 /*!40000 ALTER TABLE `persona` DISABLE KEYS */;
+INSERT INTO `persona` VALUES (1,'sr','string','string','string','Activo','2023-07-18','2023-07-18 06:55:43','2023-07-18 00:12:49'),(3,'string','string','dddddd','string','Activo','2023-07-18',NULL,'2023-07-18 07:07:01');
 /*!40000 ALTER TABLE `persona` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -227,35 +238,6 @@ LOCK TABLES `recomendacion` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `usuario`
---
-
-DROP TABLE IF EXISTS `usuario`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `usuario` (
-  `id_usuario` int NOT NULL,
-  `id_persona` int DEFAULT NULL,
-  `nombre` varchar(100) DEFAULT NULL,
-  `correo` varchar(100) DEFAULT NULL,
-  `contraseña` varchar(100) DEFAULT NULL,
-  `fecha_registro` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `fecha_actualizacion` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `estatus` enum('Activo','Inactivo') DEFAULT 'Activo',
-  PRIMARY KEY (`id_usuario`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `usuario`
---
-
-LOCK TABLES `usuario` WRITE;
-/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `valoracion`
 --
 
@@ -286,6 +268,14 @@ LOCK TABLES `valoracion` WRITE;
 /*!40000 ALTER TABLE `valoracion` DISABLE KEYS */;
 /*!40000 ALTER TABLE `valoracion` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping events for database 'bookfash'
+--
+
+--
+-- Dumping routines for database 'bookfash'
+--
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -296,4 +286,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-10 13:19:58
+-- Dump completed on 2023-07-17 19:29:13

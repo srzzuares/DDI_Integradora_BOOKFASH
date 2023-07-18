@@ -59,6 +59,8 @@ def get_update(data,idpersona):
         result = conn.execute(persona.update().values(dict(data)).where(persona.c.id_persona == idpersona))
         conn.commit()
         return result.last_updated_params()
+    resss = {"status": "Valores no actualizados, esto se debe porque los elementos son únicos"}
+    return resss
 
 def get_delete(idpersona): 
   ip = get_person(idpersona)

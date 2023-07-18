@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from schemas.personaSchema import personaSchema
+from schemas.personaSchema import personaSchema,personaSchemaPut
 from controllers.personaController import get_persons,get_person,get_create,get_update,get_delete
 server = APIRouter()
 
@@ -18,7 +18,7 @@ def POST_PERSON(data:personaSchema):
     return get_create(data)
 
 @server.put("/persona/update/{idpersona}")
-def PUT_PERSON(data:personaSchema,idpersona):
+def PUT_PERSON(data:personaSchemaPut,idpersona):
     return get_update(data,idpersona)
 
 @server.delete("/persona/delete/{idpersona}")

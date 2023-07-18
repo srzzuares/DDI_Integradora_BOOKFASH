@@ -1,14 +1,16 @@
-from sqlalchemy import Table, Column, Integer, String, Boolean, Date, Sequence,Enum
+from sqlalchemy import Table, Column, Integer, String, Date, DateTime,Enum
 from config.db import meta, engine
-
+import datetime
 persona = Table("persona", meta,
-                Column("id_persona", Integer, Sequence('persona_id_seq'), primary_key=True),
-                Column("nombre", String(100)),
-                Column("apellido", String(100)),
-                Column("fecha_nacimiento", Date),
-                Column("fecha_registro", Date),
-                Column("fecha_actualizacion", Date),
-                Column("estatus", Boolean)
-            )
+         Column("id_persona", Integer, primary_key=True, autoincrement=True, nullable=False),
+         Column("nombre", String(100), nullable=False),
+         Column("apellido", String(100), nullable=False),
+         Column("correo", String(100), nullable=False,unique=True),
+         Column("contrasena", String(45), nullable=False),
+         Column("estatus", Enum('Activo', 'Inactivo'), nullable=False, default='Activo'),
+         Column("fecha_nacimiento", Date, nullable=False),
+         Column("fecha_actualizacion", DateTime, nullable=True),
+         Column("fecha_registro", default=datetime.datetime.utcnow)
+         )
 
 meta.create_all(engine)

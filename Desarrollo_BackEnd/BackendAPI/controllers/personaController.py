@@ -71,7 +71,7 @@ def get_deleteStatus(idpersona):
         result = conn.execute(persona.update().values(estatus="Inactivo").where(
             persona.c.id_persona == idpersona))
         conn.commit()
-        res = {"status": "Persona eliminada"}
+        res = {"status": "Persona desactivada"}
         return res
 
 def get_delete(idpersona): 

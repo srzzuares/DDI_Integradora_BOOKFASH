@@ -28,5 +28,4 @@ class personaSchemaPut(BaseModel):
     estatus:EstatusEnum
     fecha_nacimiento:date
     fecha_actualizacion:datetime
- 
- 
+

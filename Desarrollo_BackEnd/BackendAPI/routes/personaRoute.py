@@ -27,6 +27,6 @@ def DEL_PERSONSTATUS(idpersona):
 
 @server.delete("/persona/delete/{idpersona}")
 def DEL_PERSON(idpersona): 
-  return get_delete(idpersona)
+    return get_delete(idpersona)
 
 

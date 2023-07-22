@@ -7,5 +7,5 @@ app = FastAPI()
 
 
 app.include_router(personServer)
-#app.include_router(generoServer)
-#app.include_router(criterioServer)
+app.include_router(generoServer)
+app.include_router(criterioServer)

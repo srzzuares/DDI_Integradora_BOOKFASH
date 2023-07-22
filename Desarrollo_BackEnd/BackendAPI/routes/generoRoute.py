@@ -12,17 +12,17 @@ def GET_ONE(idgenero):
     return get_One(idgenero)
 
 @generoServer.post("/genero/insert")
-def POST_PERSON(data:generoSchema):
+def POST_GENERO(data:generoSchema):
     return get_create(data)
 
 @generoServer.put("/genero/update/{idgenero}")
-def PUT_PERSON(data:generoSchemaPut,idgenero):
+def PUT_GENERO(data:generoSchemaPut,idgenero):
     return get_update(data,idgenero)
 
 @generoServer.delete("/genero/deleteSt/{idgenero}")
-def DEL_PERSONSTATUS(idgenero):
+def DEL_GENEROSTATUS(idgenero):
     return get_deleteStatus(idgenero)
 
 @generoServer.delete("/genero/delete/{idgenero}")
-def DEL_PERSON(idgenero): 
+def DEL_GENERO(idgenero): 
     return get_delete(idgenero)

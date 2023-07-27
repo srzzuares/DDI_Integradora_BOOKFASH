@@ -119,3 +119,8 @@ Ofrece una amplia selección de títulos de libros, opciones personalizadas y fu
 | Nombre                    | Descripción     | Versiones    | Almacenamineto | Procesador  |
 | Alexa Voice               |  Alexa Voice es un asistente de voz basado en la nube que utiliza el procesamiento del lenguaje natural para responder preguntas, realizar tareas y controlar dispositivos conectados.         |        V. 3      |         Alexa Voice no requiere un almacenamiento significativo         |  No asociado           |  
 
+# DIAGRAMA DE GANTT
+
+![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/d29b827f-962a-4125-9281-c4f7efee7310)
+
+

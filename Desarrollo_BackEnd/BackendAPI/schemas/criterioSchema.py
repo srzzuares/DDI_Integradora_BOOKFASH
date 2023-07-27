@@ -13,7 +13,7 @@ class criterioSchema(BaseModel):
     estatus:EstatusEnum
     
 class criterioSchemaPut(BaseModel):
-    nombreGenero:str='Accion'
+    nombre:str='Criterio A Actualizar'
     descripcioncriterio:str=''
     estatus:EstatusEnum
     fecha_actualizacion:datetime

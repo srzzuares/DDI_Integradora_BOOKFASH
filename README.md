@@ -1,8 +1,8 @@
-# BOOKFASH 
+# DOCUMENTACIÒN DE BOOKFASH 
 
-   
-![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/04aceb1d-a28c-4346-a0e1-03c2abc32064)  ![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/51d4a167-96ea-40aa-84b2-c345b48733ad)
-
+<div align="center">
+ <img width="900" height="450" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/714048d5-ebc5-4b5a-9ab6-1ba0c54c0993"> </div>
+ 
 # ORGANIGRAMA DE LA EMPRESA
 <p align="center">
   <img width="800" height="400" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/de3e9929-74d5-4283-a111-4dba026797f1">
@@ -19,7 +19,7 @@
 
 | EMPRESA/ORGANIZACIÓN | UTXJ |
 |----------------------|------|
-| Proyecto             |BOOKFAHS|
+|Proyecto           |BOOKFAHS|
 |Fecha de preparación  |02/05/23|
 |Cliente               |M.T.I MARCO A. R. H|
 |Patrocinador principal | Area TI |
@@ -89,6 +89,13 @@ Ofrece una amplia selección de títulos de libros, opciones personalizadas y fu
 3. Regla de transparencia: La aplicación debe ser transparente en cuanto a cómo se generan las recomendaciones. 
 4. Regla de imparcialidad: La aplicación debe evitar sesgos injustos en las recomendaciones. 
 5. Regla de retroalimentación: La aplicación debe permitir a los usuarios proporcionar retroalimentación sobre las recomendaciones recibidas.
+
+
+# ARQUITECTURA DE SOFTWARE
+
+<div align="center">
+ <img src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/55363b4b-55ae-4d57-916c-a015331429ec"> </div>
+ 
 
 # CLASES Y CARACTERISTIVAS DE LOS USUARIOS
 

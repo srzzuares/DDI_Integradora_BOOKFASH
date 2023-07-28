@@ -6,7 +6,7 @@ editorial = Table("tbb_editorial", meta,
          Column("nombreeditorial", String(100), nullable=False),
          Column("autoresEditorial", String(100), default='Autor Anonimo'),
          Column("logoEditorial", String(250), nullable=True), # longblob
-         Column("estatus", Enum('Activo', 'Inactivo'), nullable=False, default='Activo'),== 
+         Column("estatus", Enum('Activo', 'Inactivo'), nullable=False, default='Activo'), 
          Column("fecha_actualizacion", DateTime, nullable=True),
          Column("fecha_registro", default=datetime.datetime.utcnow)
          )

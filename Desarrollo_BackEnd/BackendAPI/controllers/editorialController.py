@@ -4,7 +4,7 @@ from models.editorialModel import editorial
     http://127.0.0.1:8000
     
     """
-def get_editorials():
+def get_alls():
     listedits = conn.execute(editorial.select()).fetchall()
     list=[]
     for editor in listedits:
@@ -20,7 +20,7 @@ def get_editorials():
         list.append(dicci)
     return list
 
-def get_editorial(ideditorial):
+def get_One(ideditorial):
     listOneEdit = conn.execute(editorial.select().where(editorial.c.id_editorial == ideditorial)).first()
     if listOneEdit is not None:
         dicci = {
@@ -46,7 +46,7 @@ def get_create(data):
     return res
 
 def get_update(data,ideditorial):
-    ip = get_editorial(ideditorial)
+    ip = get_One(ideditorial)
     if ip.get("status") == "No existe el editorial":
         return ip
     else: 
@@ -58,7 +58,7 @@ def get_update(data,ideditorial):
     return stado
 
 def get_deleteStatus(ideditorial):
-    ip = get_editorial(ideditorial)
+    ip = get_One(ideditorial)
     if ip.get("status") == "No existe el editorial":
         return ip
     else:
@@ -69,7 +69,7 @@ def get_deleteStatus(ideditorial):
         return res
 
 def get_delete(ideditorial): 
-    ip = get_editorial(ideditorial)
+    ip = get_One(ideditorial)
     if ip.get("status") == "No existe el editorial":
         return ip 
     else:

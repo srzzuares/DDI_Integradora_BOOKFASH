@@ -1,12 +1,14 @@
 from config.db import conn
 from models.personaModel import persona
 """     
-    http://127.0.0.1:8000
+    http://127.0.0.1:8000/docs
     
     """
+
+
 def get_persons():
     listPersons = conn.execute(persona.select()).fetchall()
-    list=[]
+    list = []
     for persons in listPersons:
         dicci = {
             "id_persona": persons[0],
@@ -23,8 +25,10 @@ def get_persons():
         list.append(dicci)
     return list
 
+
 def get_person(idpersona):
-    listOnePerson = conn.execute(persona.select().where(persona.c.id_persona == idpersona)).first()
+    listOnePerson = conn.execute(persona.select().where(
+        persona.c.id_persona == idpersona)).first()
     if listOnePerson is not None:
         dicci = {
             "id_persona": listOnePerson[0],
@@ -44,24 +48,29 @@ def get_person(idpersona):
             "status": "No existe la persona"
         }
         return res
-    
+
+
 def get_create(data):
     conn.execute(persona.insert().values(dict(data)))
     conn.commit()
-    res={'message': "Persona Agregada"}
+    res = {'message': "Persona Agregada"}
     return res
 
-def get_update(data,idpersona):
+
+def get_update(data, idpersona):
     ip = get_person(idpersona)
     if ip.get("status") == "No existe la persona":
         return ip
-    else: 
-        result = conn.execute(persona.update().values(dict(data)).where(persona.c.id_persona == idpersona))
+    else:
+        result = conn.execute(persona.update().values(
+            dict(data)).where(persona.c.id_persona == idpersona))
         conn.commit()
         res = {"status": "Persona Actualizada"}
         return res
-    stado = {"status": "Valores no actualizados, esto se debe porque los elementos son únicos"}
+    stado = {
+        "status": "Valores no actualizados, esto se debe porque los elementos son únicos"}
     return stado
+
 
 def get_deleteStatus(idpersona):
     ip = get_person(idpersona)
@@ -74,12 +83,14 @@ def get_deleteStatus(idpersona):
         res = {"status": "Persona desactivada"}
         return res
 
-def get_delete(idpersona): 
+
+def get_delete(idpersona):
     ip = get_person(idpersona)
     if ip.get("status") == "No existe la persona":
-        return ip 
+        return ip
     else:
-        result = conn.execute(persona.delete().where(persona.c.id_persona == idpersona))
+        result = conn.execute(persona.delete().where(
+            persona.c.id_persona == idpersona))
         conn.commit()
         res = {"status": "Persona eliminada"}
         return res

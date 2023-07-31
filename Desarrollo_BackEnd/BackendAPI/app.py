@@ -6,6 +6,7 @@ from routes.editorialRoute import editorialServer
 from routes.valoracionRoute import valoracionServer
 from routes.libroRoute import libroServer
 from routes.recomendacionRoute import recomendacionServer
+from routes.autorRoute import autorServer
 
 app = FastAPI()
 
@@ -17,3 +18,4 @@ app.include_router(editorialServer, tags=['Tabla de Editorial'])
 app.include_router(valoracionServer, tags=['Tabla de Valoracion'])
 app.include_router(libroServer, tags=['Tabla de Libro'])
 app.include_router(recomendacionServer, tags=['Tabla de Recomendacion'])
+app.include_router(autorServer, tags=['Tabla de Autor'])

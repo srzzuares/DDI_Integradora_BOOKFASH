@@ -130,4 +130,12 @@ Ofrece una amplia selección de títulos de libros, opciones personalizadas y fu
 
 ![image](https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/d29b827f-962a-4125-9281-c4f7efee7310)
 
-
+# Interfaz para Smart Tv
+| Interfaz de Usuario (UI) | Descripción |
+| :----------------------------------: | :----------------------------------: |
+|<img src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/61eb9d10-5419-4c2c-8330-0ef009f6f4aa" alt="Inicio" width="180" />|  **Bienvenida** <br>Al iniciar la aplicación en SMART TV el usuario prodra visualizará una pantalla de bienvenida la cual mostrada el boton de entrada|
+|<img src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/0c833ab5-b2b6-4771-ba78-aa1f073092c6" alt="Inicio" width="180" />|  **Pantalla de inicio** <br>El usuario podrá visualizar la primera pantalla de incio de la aplicaciòn la cual mostrara el menu pricipal. |
+|<img src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/0ff17c45-3af6-483f-ba31-7c3d981d7f94" alt="Inicio" width="180" />|  **Autores** <br>En esta pantalla se mostraran los autores disponibles en la Aplicaciòn para que los lectores busquen libros por autores. |
+|<img src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/4b8fa80f-886b-4a34-8083-1efec287ec47" alt="Inicio" width="180" />|  **Libros** <br>En este apartado se mostraran los libros disponibles para leer en la App. |
+|<img src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/99b0eb24-2ce5-4b06-9d91-5804ac68974f" alt="Inicio" width="180" />|  **Descripciòn de libros** <br> Se mostrata una visuizaciòn de la descripciòn de los libros y suportada. |
+|<img src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/adf7c84b-2b4b-48c9-8748-1bdb1e000e2a" alt="Inicio" width="180" />|  **Autores** <br>Se mostrará la pantalla con información relacionada <br>a los autores |

@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="WB DataDic" />
+    <meta name="description" content="mydb Data Dictionary." />
+    <title>mydb Data Dictionary</title>
+    <style type="text/css">
+    table{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    abbr{
+        cursor: help;
+    }
+    table, td, th{
+        border-style: solid;
+        border-width: 1px;
+    }
+    table caption{
+        font-size: 120%;
+        font-weight: bold;
+    }
+    caption{
+        color: black;
+    }
+    td, th{
+        border-color: silver;
+    }
+    tr:hover{
+        color: #333;
+        background-color: #F2F2F2;
+    }
+    th{
+        background-color: silver;
+    }
+    td{
+        color: gray;
+    }
+    ul{
+        font-style: italic;
+    }
+    #title-sect{
+        color: gray;
+        text-align: right;
+    }
+    .proj-desc{
+        text-align: right;
+    }
+    </style>
+</head>
+<body>
+<div id="title-sect">
+<h1>mydb<br> Data Dictionay</h1>
+<p>
+<em>2023-07-27</em>
+</p>
+<p class="proj-desc">
+<em></em>
+</p>
+</div>
+<h2>Alphabetic Index</h2>
+<ul>
+</ul>
+<div class="container-fluid">
+    <h1>bookfash</h1>
+    
+    <p class="d-print-none">
+    </p>
+  
+    <div>
+            <div>
+          <h2>tbb_autor</h2>
+          
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th>Columna</th>
+                <th>Tipo</th>
+                <th>Nulo</th>
+                <th>Predeterminado</th>
+                                <th>Enlaces a</th>
+                              <th>Comentarios</th>
+                                <th>Tipo de medio</th>
+                            </tr>
+            </thead>
+            <tbody>
+                            <tr>
+                  <td class="text-nowrap">
+                    id_autor
+                                        <em>(Primaria)</em>
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    PersonaId
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td>tbb_persona -&gt; id_persona</td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    LibroId
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td>tbb_libro -&gt; id_libro</td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    cantidadlibros
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        1
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    biografiaAutor
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    varchar(205)
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        Biografia no disponible
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    estatus
+                                    </td>
+                  <td lang="en" dir="ltr">
+                    enum(&#039;Activo&#039;, &#039;Inactivo&#039;)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        Activo
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_actualizacion
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_registro
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        current_timestamp()
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                        </tbody>
+          </table>
+  
+                    <h3>Índices</h3>
+  
+            <table class="table table-striped align-middle">
+              <thead>
+                <tr>
+                  <th>Nombre de la clave</th>
+                  <th>Tipo</th>
+                  <th>Único</th>
+                  <th>Empaquetado</th>
+                  <th>Columna</th>
+                  <th>Cardinalidad</th>
+                  <th>Cotejamiento</th>
+                  <th>Nulo</th>
+                  <th>Comentario</th>
+                </tr>
+              </thead>
+  
+              <tbody>
+                                                <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      id_autor
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                                                <tr>
+                  <td rowspan="1">PersonaID_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      PersonaId
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                                                <tr>
+                  <td rowspan="1">LibroID_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      LibroId
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                            </tbody>
+            </table>
+                </div>
+            <div>
+          <h2>tbb_criterio</h2>
+          
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th>Columna</th>
+                <th>Tipo</th>
+                <th>Nulo</th>
+                <th>Predeterminado</th>
+                                <th>Enlaces a</th>
+                              <th>Comentarios</th>
+                                <th>Tipo de medio</th>
+                            </tr>
+            </thead>
+            <tbody>
+                            <tr>
+                  <td class="text-nowrap">
+                    id_criterio
+                                        <em>(Primaria)</em>
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    nombre
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    varchar(100)
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        Anonimo
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    descripcioncriterio
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    varchar(200)
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        Sin Criterio
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    estatus
+                                    </td>
+                  <td lang="en" dir="ltr">
+                    enum(&#039;Activo&#039;, &#039;Inactivo&#039;)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        Activo
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_actualizacion
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_registro
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        current_timestamp()
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                        </tbody>
+          </table>
+  
+                    <h3>Índices</h3>
+  
+            <table class="table table-striped align-middle">
+              <thead>
+                <tr>
+                  <th>Nombre de la clave</th>
+                  <th>Tipo</th>
+                  <th>Único</th>
+                  <th>Empaquetado</th>
+                  <th>Columna</th>
+                  <th>Cardinalidad</th>
+                  <th>Cotejamiento</th>
+                  <th>Nulo</th>
+                  <th>Comentario</th>
+                </tr>
+              </thead>
+  
+              <tbody>
+                                                <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      id_criterio
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                            </tbody>
+            </table>
+                </div>
+            <div>
+          <h2>tbb_editorial</h2>
+          
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th>Columna</th>
+                <th>Tipo</th>
+                <th>Nulo</th>
+                <th>Predeterminado</th>
+                                <th>Enlaces a</th>
+                              <th>Comentarios</th>
+                                <th>Tipo de medio</th>
+                            </tr>
+            </thead>
+            <tbody>
+                            <tr>
+                  <td class="text-nowrap">
+                    id_editorial
+                                        <em>(Primaria)</em>
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    nombreeditorial
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    varchar(100)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    autoresEditorial
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    varchar(100)
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        Autor Anonimo
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    logoEditorial
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    longblob
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    estatus
+                                    </td>
+                  <td lang="en" dir="ltr">
+                    enum(&#039;Activo&#039;, &#039;Inactivo&#039;)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        Activo
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_actualizacion
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_registro
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        current_timestamp()
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                        </tbody>
+          </table>
+  
+                    <h3>Índices</h3>
+  
+            <table class="table table-striped align-middle">
+              <thead>
+                <tr>
+                  <th>Nombre de la clave</th>
+                  <th>Tipo</th>
+                  <th>Único</th>
+                  <th>Empaquetado</th>
+                  <th>Columna</th>
+                  <th>Cardinalidad</th>
+                  <th>Cotejamiento</th>
+                  <th>Nulo</th>
+                  <th>Comentario</th>
+                </tr>
+              </thead>
+  
+              <tbody>
+                                                <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      id_editorial
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                            </tbody>
+            </table>
+                </div>
+            <div>
+          <h2>tbb_genero</h2>
+          
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th>Columna</th>
+                <th>Tipo</th>
+                <th>Nulo</th>
+                <th>Predeterminado</th>
+                                <th>Enlaces a</th>
+                              <th>Comentarios</th>
+                                <th>Tipo de medio</th>
+                            </tr>
+            </thead>
+            <tbody>
+                            <tr>
+                  <td class="text-nowrap">
+                    id_genero
+                                        <em>(Primaria)</em>
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    nombreGenero
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    varchar(45)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    GeneroPadre
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td>tbb_genero -&gt; id_genero</td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    estatus
+                                    </td>
+                  <td lang="en" dir="ltr">
+                    enum(&#039;Activo&#039;, &#039;Inactivo&#039;)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        Activo
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_actualizacion
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_registro
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        current_timestamp()
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                        </tbody>
+          </table>
+  
+                    <h3>Índices</h3>
+  
+            <table class="table table-striped align-middle">
+              <thead>
+                <tr>
+                  <th>Nombre de la clave</th>
+                  <th>Tipo</th>
+                  <th>Único</th>
+                  <th>Empaquetado</th>
+                  <th>Columna</th>
+                  <th>Cardinalidad</th>
+                  <th>Cotejamiento</th>
+                  <th>Nulo</th>
+                  <th>Comentario</th>
+                </tr>
+              </thead>
+  
+              <tbody>
+                                                <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      id_genero
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                                                <tr>
+                  <td rowspan="1">GeneroPadre_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      GeneroPadre
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>Sí</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                            </tbody>
+            </table>
+                </div>
+            <div>
+          <h2>tbb_libro</h2>
+          
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th>Columna</th>
+                <th>Tipo</th>
+                <th>Nulo</th>
+                <th>Predeterminado</th>
+                                <th>Enlaces a</th>
+                              <th>Comentarios</th>
+                                <th>Tipo de medio</th>
+                            </tr>
+            </thead>
+            <tbody>
+                            <tr>
+                  <td class="text-nowrap">
+                    id_libro
+                                        <em>(Primaria)</em>
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    titulolibro
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    varchar(100)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    portada
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    longblob
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    CriterioId
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td>tbb_criterio -&gt; id_criterio</td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    EditorialId
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td>tbb_editorial -&gt; id_editorial</td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    GeneroId
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td>tbb_genero -&gt; id_genero</td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    numeroPaginas
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fechaPublicacion
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    date
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    descripcionlibro
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    varchar(200)
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    ValoracionId
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td>tbb_valoracion -&gt; id_valoracion</td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    estatus
+                                    </td>
+                  <td lang="en" dir="ltr">
+                    enum(&#039;Activo&#039;, &#039;Inactivo&#039;)
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        Activo
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_actualizacion
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_registro
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        current_timestamp()
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                        </tbody>
+          </table>
+  
+                    <h3>Índices</h3>
+  
+            <table class="table table-striped align-middle">
+              <thead>
+                <tr>
+                  <th>Nombre de la clave</th>
+                  <th>Tipo</th>
+                  <th>Único</th>
+                  <th>Empaquetado</th>
+                  <th>Columna</th>
+                  <th>Cardinalidad</th>
+                  <th>Cotejamiento</th>
+                  <th>Nulo</th>
+                  <th>Comentario</th>
+                </tr>
+              </thead>
+  
+              <tbody>
+                                                <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      id_libro
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                                                <tr>
+                  <td rowspan="1">CriterioID_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      CriterioId
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>Sí</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                                                <tr>
+                  <td rowspan="1">EditorialID_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      EditorialId
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>Sí</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                                                <tr>
+                  <td rowspan="1">GeneroID_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      GeneroId
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                                                <tr>
+                  <td rowspan="1">ValoracionID_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      ValoracionId
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                            </tbody>
+            </table>
+                </div>
+            <div>
+          <h2>tbb_persona</h2>
+          
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th>Columna</th>
+                <th>Tipo</th>
+                <th>Nulo</th>
+                <th>Predeterminado</th>
+                                <th>Enlaces a</th>
+                              <th>Comentarios</th>
+                                <th>Tipo de medio</th>
+                            </tr>
+            </thead>
+            <tbody>
+                            <tr>
+                  <td class="text-nowrap">
+                    id_persona
+                                        <em>(Primaria)</em>
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    nombre
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    varchar(50)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    apellido
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    varchar(50)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    genero
+                                    </td>
+                  <td lang="en" dir="ltr">
+                    enum(&#039;Hombre&#039;, &#039;Mujer&#039;)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        Hombre
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    correo
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    varchar(50)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    contrasena
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    varchar(50)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_nacimiento
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    date
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    estatus
+                                    </td>
+                  <td lang="en" dir="ltr">
+                    enum(&#039;Activo&#039;, &#039;Inactivo&#039;)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        Activo
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_actualizacion
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_registro
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        current_timestamp()
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                        </tbody>
+          </table>
+  
+                    <h3>Índices</h3>
+  
+            <table class="table table-striped align-middle">
+              <thead>
+                <tr>
+                  <th>Nombre de la clave</th>
+                  <th>Tipo</th>
+                  <th>Único</th>
+                  <th>Empaquetado</th>
+                  <th>Columna</th>
+                  <th>Cardinalidad</th>
+                  <th>Cotejamiento</th>
+                  <th>Nulo</th>
+                  <th>Comentario</th>
+                </tr>
+              </thead>
+  
+              <tbody>
+                                                <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      id_persona
+                                        </td>
+                    <td>405</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                                                <tr>
+                  <td rowspan="1">correo_UNIQUE</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      correo
+                                        </td>
+                    <td>405</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                            </tbody>
+            </table>
+                </div>
+            <div>
+          <h2>tbb_recomendacion</h2>
+          
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th>Columna</th>
+                <th>Tipo</th>
+                <th>Nulo</th>
+                <th>Predeterminado</th>
+                                <th>Enlaces a</th>
+                              <th>Comentarios</th>
+                                <th>Tipo de medio</th>
+                            </tr>
+            </thead>
+            <tbody>
+                            <tr>
+                  <td class="text-nowrap">
+                    id_recomendacion
+                                        <em>(Primaria)</em>
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    LibroId
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td>tbb_libro -&gt; id_libro</td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    PersonaId
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td>tbb_persona -&gt; id_persona</td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    estatus
+                                    </td>
+                  <td lang="en" dir="ltr">
+                    enum(&#039;Activo&#039;, &#039;Inactivo&#039;)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        Activo
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_actualizacion
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_registro
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        current_timestamp()
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                        </tbody>
+          </table>
+  
+                    <h3>Índices</h3>
+  
+            <table class="table table-striped align-middle">
+              <thead>
+                <tr>
+                  <th>Nombre de la clave</th>
+                  <th>Tipo</th>
+                  <th>Único</th>
+                  <th>Empaquetado</th>
+                  <th>Columna</th>
+                  <th>Cardinalidad</th>
+                  <th>Cotejamiento</th>
+                  <th>Nulo</th>
+                  <th>Comentario</th>
+                </tr>
+              </thead>
+  
+              <tbody>
+                                                <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      id_recomendacion
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                                                <tr>
+                  <td rowspan="1">LibroID_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      LibroId
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                                                <tr>
+                  <td rowspan="1">PersonaID_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      PersonaId
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                            </tbody>
+            </table>
+                </div>
+            <div>
+          <h2>tbb_valoracion</h2>
+          
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th>Columna</th>
+                <th>Tipo</th>
+                <th>Nulo</th>
+                <th>Predeterminado</th>
+                                <th>Enlaces a</th>
+                              <th>Comentarios</th>
+                                <th>Tipo de medio</th>
+                            </tr>
+            </thead>
+            <tbody>
+                            <tr>
+                  <td class="text-nowrap">
+                    id_valoracion
+                                        <em>(Primaria)</em>
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    PersonaId
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(11)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        
+                                    </td>
+                                    <td>tbb_persona -&gt; id_persona</td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    numeroestrellas
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    int(10)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        1
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    estatus
+                                    </td>
+                  <td lang="en" dir="ltr">
+                    enum(&#039;Activo&#039;, &#039;Inactivo&#039;)
+                  </td>
+                  <td>No</td>
+                  <td class="text-nowrap">
+                                        Activo
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_actualizacion
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        <em>NULL</em>
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                            <tr>
+                  <td class="text-nowrap">
+                    fecha_registro
+                                    </td>
+                  <td lang="en" dir="ltr" class="text-nowrap">
+                    timestamp
+                  </td>
+                  <td>Sí</td>
+                  <td class="text-nowrap">
+                                        current_timestamp()
+                                    </td>
+                                    <td></td>
+                                  <td></td>
+                                    <td></td>
+                                </tr>
+                        </tbody>
+          </table>
+  
+                    <h3>Índices</h3>
+  
+            <table class="table table-striped align-middle">
+              <thead>
+                <tr>
+                  <th>Nombre de la clave</th>
+                  <th>Tipo</th>
+                  <th>Único</th>
+                  <th>Empaquetado</th>
+                  <th>Columna</th>
+                  <th>Cardinalidad</th>
+                  <th>Cotejamiento</th>
+                  <th>Nulo</th>
+                  <th>Comentario</th>
+                </tr>
+              </thead>
+  
+              <tbody>
+                                                <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      id_valoracion
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                                                <tr>
+                  <td rowspan="1">PersonaID_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+  
+                                                      <td>
+                      PersonaId
+                                        </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+  
+                                        <td rowspan="1"></td>
+                                      </tr>
+                                            </tbody>
+            </table>
+                </div>
+        </div>
+</table>
+</body>
+</html>

@@ -1,5 +1,7 @@
+import os
+from dotenv import load_dotenv
 from sqlalchemy import create_engine, MetaData
-engine = create_engine(
-    "mysql+pymysql://root:d3s4rroll0\"\".@localhost:3306/bookfash")
+load_dotenv()
+engine = create_engine(os.getenv('DBMANAGER'))
 meta = MetaData()
 conn = engine.connect()

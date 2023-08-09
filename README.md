@@ -1,11 +1,12 @@
 # DOCUMENTACIÒN DE BOOKFASH 
 
 <div align="center">
- <img width="900" height="450" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/714048d5-ebc5-4b5a-9ab6-1ba0c54c0993"> </div>
+ <img width="7500" height="500" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/6873d4fb-c4e1-4e51-91b5-c0bb1325007b"> </div>
  
+
 # ORGANIGRAMA DE LA EMPRESA
 <p align="center">
-  <img width="800" height="400" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/de3e9929-74d5-4283-a111-4dba026797f1">
+  <img width="750" height="400" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/de3e9929-74d5-4283-a111-4dba026797f1">
 </p>
 
 

@@ -1,7 +1,7 @@
 # DOCUMENTACIÒN DE BOOKFASH 
 
 <div align="center">
- <img width="7500" height="500" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/6873d4fb-c4e1-4e51-91b5-c0bb1325007b"> </div>
+ <img width="700" height="400" src="https://github.com/srzzuares/DDI_Integradora_BOOKFASH/assets/84793967/6873d4fb-c4e1-4e51-91b5-c0bb1325007b"> </div>
  
 
 # ORGANIGRAMA DE LA EMPRESA

@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from schemas.ProcedimientosSchemas import InsPerSchema
-from controllers.ProcedimientosController import get_Status, post_InsertPerson, del_DelPersonsAll
+from controllers.ProcedimientosController import get_Status, post_InsertPerson, del_DelPersonsAll, InnerJoin
 ProcessServer = APIRouter()
 
 
@@ -17,3 +17,8 @@ def GET_InsertPerson(data: InsPerSchema):
 @ProcessServer.delete("/Procc/DeletePersons")
 def GET_DeleteAllPersons():
     return del_DelPersonsAll()
+
+
+@ProcessServer.get("/Procc/InnerJoinsPersons")
+def GET_INNERPersons():
+    return InnerJoin()

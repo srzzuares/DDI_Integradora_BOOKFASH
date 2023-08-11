@@ -32,3 +32,17 @@ def del_DelPersonsAll():
         "status": "Personas Eliminaas con Todo el Exito!"
     }
     return res
+
+
+def InnerJoin():
+    Consulta = "SELECT tbb_libro.id_libro, tbb_libro.titulolibro, tbb_valoracion.numeroestrellas FROM tbb_libro INNER JOIN tbb_valoracion ON tbb_libro.ValoracionId = tbb_valoracion.id_valoracion;"
+    exe = conn.execute(text(Consulta))
+    listaItems = []
+    for item in exe:
+        dicci = {
+            "id_libro": item[0],
+            "tituloLibro": item[1],
+            "numeroestrellas": item[2]
+        }
+        listaItems.append(dicci)
+    return listaItems

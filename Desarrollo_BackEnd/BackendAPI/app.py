@@ -7,10 +7,10 @@ from routes.valoracionRoute import valoracionServer
 from routes.libroRoute import libroServer
 from routes.recomendacionRoute import recomendacionServer
 from routes.autorRoute import autorServer
-
+from routes.ProcedimientosRoute import ProcessServer
 app = FastAPI()
 
-
+app.include_router(ProcessServer, tags=['Consultas Avanzadas'])
 app.include_router(personServer, tags=['Tabla de Personas'])
 app.include_router(generoServer, tags=['Tabla de Genero'])
 app.include_router(criterioServer, tags=['Tabla de Criterio'])

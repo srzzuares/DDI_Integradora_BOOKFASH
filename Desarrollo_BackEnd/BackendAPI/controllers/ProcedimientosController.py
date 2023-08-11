@@ -18,7 +18,6 @@ def get_Status():
 def post_InsertPerson(data):
     CanPers = data.Cantidad
     Consulta = f"CALL sp_generar_personas_aleatorias({CanPers})"
-    print(CanPers)
     exe = conn.execute(text(Consulta))
     res = {
         "status": "Personas Agregadas con Exito!"

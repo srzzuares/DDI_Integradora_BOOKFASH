@@ -504,7 +504,7 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_eliminar_persona`(IN id_persona INT)
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_eliminar_persona`()
 BEGIN
     DELETE FROM tbb_persona;
     ALTER TABLE tbb_persona AUTO_INCREMENT = 1;

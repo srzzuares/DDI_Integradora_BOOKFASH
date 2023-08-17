@@ -11,7 +11,7 @@ from routes.ProcedimientosRoute import ProcessServer
 from routes.ViewRecomendacionRoute import viewsServer
 app = FastAPI()
 
-app.include_router(viewsServer, tags=['Sistema de Recomentacion'])
+app.include_router(viewsServer, tags=['Sistema de Recomendacion de libros'])
 app.include_router(ProcessServer, tags=['Consultas Avanzadas'])
 app.include_router(personServer, tags=['Tabla de Personas'])
 app.include_router(generoServer, tags=['Tabla de Genero'])

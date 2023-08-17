@@ -12,8 +12,8 @@ def get_Alls():
     for aut in listautor:
         dicci = {
             "id_autor": aut[0],
-            "PersonaId": aut[1],
-            "LibroId": aut[2],
+            "id_persona": aut[1],
+            "id_libro": aut[2],
             "cantidadlibros": aut[3],
             "biografiaAutor": aut[4],
             "estatus": aut[5],
@@ -30,8 +30,8 @@ def get_One(idautor):
     if listOneAutor is not None:
         dicci = {
             "id_autor": listOneAutor[0],
-            "PersonaId": listOneAutor[1],
-            "LibroId": listOneAutor[2],
+            "id_persona": listOneAutor[1],
+            "id_libro": listOneAutor[2],
             "cantidadlibros": listOneAutor[3],
             "biografiaAutor": listOneAutor[4],
             "estatus": listOneAutor[5],

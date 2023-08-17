@@ -9,13 +9,13 @@ class EstatusEnum(str, Enum):
 
 
 class recomendacionSchema(BaseModel):
-    LibroId: int = 1
-    PersonaId: int = 1
+    id__libro: int = 1
+    id_persona: int = 1
     estatus: EstatusEnum
 
 
 class recomendacionSchemaPut(BaseModel):
-    LibroId: int = 1
-    PersonaId: int = 1
+    id__libro: int = 1
+    id_persona: int = 1
     estatus: EstatusEnum
     fecha_actualizacion: datetime

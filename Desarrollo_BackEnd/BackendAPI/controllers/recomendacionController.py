@@ -12,8 +12,8 @@ def get_alls():
     for Recon in listRecomen:
         dicci = {
             "id_recomendacion": Recon[0],
-            "LibroId": Recon[1],
-            "PersonaId": Recon[2],
+            "id__libro": Recon[1],
+            "id_persona": Recon[2],
             "estatus": Recon[3],
             "fecha_actualizacion": Recon[4],
             "fecha_registro": Recon[5]
@@ -28,8 +28,8 @@ def get_One(idrecomendacion):
     if listOneRecon is not None:
         dicci = {
             "id_recomendacion": listOneRecon[0],
-            "LibroId": listOneRecon[1],
-            "PersonaId": listOneRecon[2],
+            "id__libro": listOneRecon[1],
+            "id_persona": listOneRecon[2],
             "estatus": listOneRecon[3],
             "fecha_actualizacion": listOneRecon[4],
             "fecha_registro": listOneRecon[5],

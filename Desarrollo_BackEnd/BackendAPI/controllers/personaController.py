@@ -67,9 +67,6 @@ def get_update(data, idpersona):
         conn.commit()
         res = {"status": "Persona Actualizada"}
         return res
-    stado = {
-        "status": "Valores no actualizados, esto se debe porque los elementos son únicos"}
-    return stado
 
 
 def get_deleteStatus(idpersona):
